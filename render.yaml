@@ -1,0 +1,45 @@
+# Render.com Blueprint Configuration for Holy Angels Substitution
+
+services:
+  # Web Service
+  - type: web
+    name: holy-angels-substitution
+    env: node
+    region: oregon  # Change to your preferred region
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true  # Render will generate a secure secret
+      - key: DB_HOST
+        fromDatabase:
+          name: holy-angels-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: holy-angels-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: holy-angels-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: holy-angels-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: holy-angels-db
+          property: password
+
+databases:
+  # PostgreSQL Database
+  - name: holy-angels-db
+    plan: free
+    region: oregon  # Same region as web service
+    postgresMajorVersion: 14

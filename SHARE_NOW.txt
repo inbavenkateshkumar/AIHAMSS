@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════════
+  GET YOUR SHAREABLE LINK RIGHT NOW!
+═══════════════════════════════════════════════════════════
+
+STEP 1: Start your server
+───────────────────────────────────────────────────────────
+Open terminal and run:
+  npm start
+
+Keep this window open!
+
+
+STEP 2: Start ngrok (NEW terminal window)
+───────────────────────────────────────────────────────────
+Open a NEW terminal and run:
+  ngrok http 3000
+
+Or double-click: start-with-ngrok.bat (Windows)
+
+
+STEP 3: Copy your URL!
+───────────────────────────────────────────────────────────
+In the ngrok window, look for:
+
+  Forwarding  https://xxxxx.ngrok-free.app -> http://localhost:3000
+
+Copy the URL:  https://xxxxx.ngrok-free.app
+
+This is your shareable link!
+
+
+STEP 4: Share with your friend!
+───────────────────────────────────────────────────────────
+Send this URL via:
+  ✓ WhatsApp
+  ✓ Email  
+  ✓ Text message
+  ✓ Any messaging app
+
+Just copy and paste the ngrok URL!
+
+
+⚠️  IMPORTANT:
+  - Keep BOTH terminals running (server + ngrok)
+  - If you close either one, link stops working
+  - URL changes each time you restart ngrok
+
+
+✅ That's it! Your friend can now access your system from anywhere!
+
+═══════════════════════════════════════════════════════════
